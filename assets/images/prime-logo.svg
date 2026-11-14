@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 310" role="img" aria-label="ПРАЙМ — ИГРОВАЯ ЗОНА">
+ <defs>
+  <linearGradient id="violet" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#df9aff"/><stop offset=".42" stop-color="#a63ef6"/><stop offset=".7" stop-color="#7419d9"/><stop offset="1" stop-color="#a34cff"/></linearGradient>
+  <linearGradient id="silver" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#fff"/><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#a9a9b2"/></linearGradient>
+  <linearGradient id="gold" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#fff28b"/><stop offset=".5" stop-color="#ffd628"/><stop offset="1" stop-color="#f5ad00"/></linearGradient>
+ </defs>
+ <!-- Wings and geometric lettering reconstructed from the supplied sign. -->
+ <g fill="url(#violet)" stroke="#d38cff" stroke-width="2" stroke-linejoin="round">
+  <path d="M16 69H306V211H262V100H34Z M137 109H181V211H137Z"/>
+  <path d="M34 109H123V133H45Z M48 142H123V165H60Z M64 174H123V196H77Z"/>
+  <path fill-rule="evenodd" d="M322 69H455C493 69 510 86 510 116C510 149 491 163 455 163H365V211H322V133H448C458 133 464 128 464 116C464 105 458 100 448 100H340Z"/>
+  <path fill-rule="evenodd" d="M492 211 603 69H642L754 211H706L686 185H562L542 211ZM585 155H663L624 104Z"/>
+  <path d="M746 69H790V160L890 69H930V211H886V121L786 211H746Z"/>
+  <path d="M938 69H1001L1050 160 1098 69H1184L1165 100H1131V211H1089V119L1066 167H1033L1006 119V211H965V100H955Z"/>
+  <path d="M1139 109H1165L1154 133H1139Z M1139 142H1151L1140 165H1139Z"/>
+ </g>
+ <g fill="url(#gold)" stroke="#ffe670" stroke-width="2" stroke-linejoin="round"><path d="M798 18 811 35 824 19 838 35 851 18 864 35 877 20 868 64H806Z"/><path d="M811 68H864V74H811Z"/><path d="M798 8 805 15 798 22 791 15Z M824 8 831 15 824 22 817 15Z M851 8 858 15 851 22 844 15Z M877 10 884 17 877 24 870 17Z"/></g>
+ <text x="600" y="282" text-anchor="middle" fill="url(#silver)" font-family="Unbounded, Arial Black, Arial, sans-serif" font-weight="900" font-size="73" textLength="965" lengthAdjust="spacingAndGlyphs">ИГРОВАЯ ЗОНА</text>
+</svg>

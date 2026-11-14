@@ -1,0 +1,20 @@
+.price-choice {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 7px 8px;
+  color: #ebd9ff;
+  background: #392547;
+  font-weight: 800;
+  white-space: nowrap;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.price-choice:hover {
+  border-color: #c39aff;
+  background: #56336f;
+  color: #fff;
+}

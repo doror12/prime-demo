@@ -1,0 +1,305 @@
+/* Navigation keeps the main sections one click away. */
+.home-header > .brand-logo {
+  grid-column: 1;
+  justify-self: start;
+}
+
+.home-header .home-section-nav {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 20px;
+  min-width: 0;
+}
+
+.home-header .home-section-nav a {
+  color: #e9dcf1;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.home-header .home-section-nav a:hover {
+  color: #c39aff;
+}
+
+.home-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+  color: #d5c3e0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.home-footer-links a:hover {
+  color: #fff;
+}
+
+.header-account {
+  padding: 9px 12px;
+  border: 1px solid #9670b8;
+  border-radius: 8px;
+  color: #f4e9fc;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.header-account:hover {
+  border-color: #d7b6ff;
+  background: #38234b;
+}
+
+.account-bookings-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: #d5b3ff;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.account-bookings-link:hover {
+  color: #fff;
+}
+
+/* Keep the login form visible while navigating within the booking panel. */
+.motion-ready .single-booking .summary {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+.zones .zone-cards {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.zones .zone-card {
+  min-width: 0;
+}
+
+.zones .zone-card strong {
+  font-size: clamp(15px, 1.35vw, 21px);
+  overflow-wrap: normal;
+}
+
+@media (min-width: 801px) {
+  #prices-tv-zone {
+    grid-column: 1 / -1;
+    width: calc((100% - 14px) / 2);
+    justify-self: center;
+  }
+}
+
+.rules-disclosure {
+  border: 1px solid #594467;
+  background: #21172d;
+}
+
+.rules-disclosure summary {
+  padding: 20px 24px;
+  color: #f5edfb;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.rules-disclosure summary::marker {
+  color: #c39aff;
+}
+
+.single-booking-intro {
+  padding: 80px 6% 12px;
+  background: #15101d;
+}
+
+.single-booking-intro h2,
+.rules-intro h2 {
+  margin: 18px 0;
+  font:
+    800 clamp(30px, 4.5vw, 54px) / 1.15 Unbounded,
+    sans-serif;
+  letter-spacing: -0.06em;
+}
+
+.single-booking-intro h2 em,
+.rules-intro h2 span {
+  color: #c39aff;
+  font-style: normal;
+}
+
+.single-booking-intro p {
+  color: #c6b8d0;
+  line-height: 1.7;
+}
+
+@media (min-width: 801px) {
+  .single-booking .tool-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  .single-booking .tool-main {
+    grid-template-rows: auto 1fr;
+  }
+
+  .single-booking .tool-side {
+    display: flex;
+    min-width: 0;
+  }
+
+  .single-booking .summary {
+    flex: 1;
+  }
+}
+
+/* Keep booking cards and their controls aligned throughout the section. */
+.single-booking .tool-layout {
+  gap: 18px;
+}
+
+.single-booking .tool-main {
+  gap: 18px;
+}
+
+.single-booking .tool-card {
+  min-width: 0;
+  padding: clamp(22px, 2.5vw, 30px);
+}
+
+.single-booking .tool-card h2 {
+  margin: 0 0 26px;
+}
+
+.single-booking .seat-choice h2 {
+  margin-top: 14px;
+}
+
+.single-booking .summary {
+  position: relative;
+  top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.single-booking .summary > .tool-step:first-child {
+  position: absolute;
+  top: clamp(22px, 2.5vw, 30px);
+  right: clamp(22px, 2.5vw, 30px);
+}
+
+.single-booking .summary > .button {
+  margin-top: auto;
+}
+
+.single-booking .booking-parameters {
+  gap: 16px;
+}
+
+.single-booking .seat-choice .booking-fields {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.single-booking .seat-choice select,
+.single-booking .auth-label input {
+  min-height: 52px;
+  border-radius: 7px;
+}
+
+.single-booking .booking-zone-specs > div {
+  min-width: 0;
+}
+
+@media (max-width: 520px) {
+  .single-booking .booking-parameters {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.rules-page {
+  min-height: 0;
+}
+
+.rules-intro {
+  padding-top: 0;
+}
+
+.rules-disclosure {
+  padding: 0 24px 24px;
+}
+
+.rules-disclosure summary {
+  margin: 0 -24px;
+}
+
+.rules-disclosure[open] summary {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #51405c;
+}
+
+@media (max-width: 1000px) {
+  html {
+    scroll-padding-top: 160px;
+  }
+
+  .home-header .home-section-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: center;
+  }
+
+  .zones .zone-cards {
+    grid-template-columns: repeat(5, minmax(190px, 1fr));
+    overflow-x: auto;
+    padding: 5px 0 12px;
+    scroll-snap-type: x proximity;
+    scrollbar-color: #a575d7 #21172d;
+    scrollbar-width: thin;
+  }
+
+  .zones .zone-card {
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 200px;
+  }
+
+  header.home-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .home-header > .brand-logo {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  .home-header .home-header-right {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .home-header .home-section-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x: auto;
+    padding: 6px 0 3px;
+  }
+
+  .single-booking-intro {
+    padding-top: 56px;
+  }
+}

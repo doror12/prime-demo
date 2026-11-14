@@ -1,0 +1,115 @@
+.rules-page {
+  min-height: 100vh;
+  padding: 64px 6% 110px;
+  background:
+    radial-gradient(ellipse at 90% 0%, #58336c80, transparent 45%), #130d1c;
+}
+
+.rules-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.rules-back {
+  color: #cdb5e2;
+  font-size: 12px;
+  font-weight: 800;
+}
+.rules-back:hover {
+  color: #fff;
+}
+.rules-intro {
+  max-width: 780px;
+  padding: 64px 0 34px;
+}
+.rules-eyebrow,
+.rules-section-number {
+  color: #c39aff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+.rules-intro h1 {
+  margin: 20px 0;
+  font:
+    800 clamp(30px, 5vw, 58px) / 1.15 Unbounded,
+    sans-serif;
+  letter-spacing: -0.06em;
+}
+.rules-intro h1 span {
+  color: #c39aff;
+}
+.rules-intro > p:last-child {
+  color: #c6b8d0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.rules-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+.rules-nav a {
+  padding: 11px 15px;
+  border: 1px solid #574163;
+  color: #e4d1f5;
+  font-size: 12px;
+  font-weight: 800;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.rules-nav a:hover {
+  border-color: #c39aff;
+  background: #38254a;
+}
+.rules-section {
+  margin-top: 14px;
+  padding: clamp(24px, 4vw, 48px);
+  border: 1px solid #51405c;
+  background: #21172dd9;
+}
+.rules-section h2 {
+  margin: 15px 0 25px;
+  font:
+    700 clamp(19px, 2vw, 27px) / 1.3 Unbounded,
+    sans-serif;
+  letter-spacing: -0.04em;
+}
+.rules-list {
+  margin: 0;
+  padding-left: 26px;
+  color: #e2d7e9;
+}
+.rules-list li {
+  padding: 11px 0 11px 8px;
+  line-height: 1.7;
+  font-size: 14px;
+}
+.rules-list li::marker {
+  color: #c39aff;
+  font-weight: 800;
+}
+.rules-list li + li {
+  border-top: 1px solid #4a3855;
+}
+.rules-agreement {
+  margin: 25px 0 0;
+  padding: 22px 25px;
+  border-left: 3px solid #c39aff;
+  color: #d5c6df;
+  background: #2b1b38;
+  font-size: 14px;
+  line-height: 1.7;
+}
+@media (max-width: 600px) {
+  .rules-page {
+    padding: 38px 5% 72px;
+  }
+  .rules-intro {
+    padding-top: 42px;
+  }
+  .rules-list li {
+    font-size: 13px;
+  }
+}

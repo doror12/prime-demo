@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PRIME — место твоей игры</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Unbounded:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prime-demo/assets/css/style.css" />
+    <link rel="stylesheet" href="/prime-demo/assets/css/design.css" />
+    <link rel="stylesheet" href="/prime-demo/pages/home/home.css" />
+    <link rel="stylesheet" href="/prime-demo/pages/home/zone-reveal.css" />
+    <link rel="stylesheet" href="/prime-demo/pages/prices/prices.css" />
+    <link rel="stylesheet" href="/prime-demo/pages/rules/rules.css" />
+    <link rel="stylesheet" href="/prime-demo/pages/home/single-page.css" />
+    <link rel="stylesheet" href="/prime-demo/pages/booking/custom-controls.css" />
+  </head>
+  <body id="top" data-single-page="true">
+    <header class="home-header">
+      <a
+        class="logo brand-logo"
+        href="#top"
+        aria-label="Прайм — вернуться в начало страницы"
+        ><img src="/prime-demo/assets/images/prime-logo.svg" alt="Прайм — игровая зона"
+      /></a>
+      <nav class="home-section-nav" aria-label="Разделы сайта">
+        <a href="#zones">Зоны</a>
+        <a href="#prices">Цены</a>
+        <a href="#booking">Бронирование</a>
+        <a href="#rules">Правила</a>
+      </nav>
+      <div class="home-header-right">
+        <a class="header-account" href="#account">Личный кабинет</a>
+      </div>
+    </header>
+    <div class="edge-art" aria-hidden="true">
+      <div class="edge-character edge-left edge-cs"></div>
+      <div class="edge-character edge-left edge-gta-left"></div>
+      <div class="edge-character edge-right edge-pubg"></div>
+      <div class="edge-character edge-right edge-gta-right"></div>
+    </div>
+    <main>
+      <section class="hero">
+        <div class="hero-decor" aria-hidden="true">
+          <svg class="hero-decor-side" viewBox="0 0 240 440" fill="none">
+            <path d="M-160 32 28 220 -160 408" />
+            <path d="M-98 32 90 220 -98 408" />
+            <path d="M-36 32 152 220 -36 408" />
+          </svg>
+          <svg
+            class="hero-decor-side hero-decor-side--right"
+            viewBox="0 0 240 440"
+            fill="none"
+          >
+            <path d="M-160 32 28 220 -160 408" />
+            <path d="M-98 32 90 220 -98 408" />
+            <path d="M-36 32 152 220 -36 408" />
+          </svg>
+        </div>
+        <div class="hero-copy">
+          <a
+            class="logo brand-logo hero-brand"
+            href="/prime-demo/"
+            aria-label="Прайм — игровая зона"
+            ><img
+              src="/prime-demo/assets/images/prime-logo.svg"
+              alt="Прайм — игровая зона"
+          /></a>
+          <h1 class="visually-hidden">Прайм — игровая зона</h1>
+          <div class="actions">
+            <a class="button hero-booking" href="#booking">Забронировать</a>
+          </div>
+        </div>
+      </section>
+      <section class="section zones" id="zones">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow dark">01 / ВЫБЕРИ СВОЮ ИГРУ</div>
+            <h2>
+              НАЙДИ СВОЮ<br /><em>ЗОНУ<span>.</span></em>
+            </h2>
+          </div>
+        </div>
+        <div class="zone-cards">
+          <a class="zone-card zone-card--standard" href="#prices-standard">
+            <strong>STANDARD</strong>
+            <span>от 120 ₽ / час</span>
+          </a>
+          <a class="zone-card zone-card--ostrovok" href="#prices-ostrovok">
+            <strong>ОСТРОВОК</strong>
+            <span>от 110 ₽ / час</span>
+          </a>
+          <a class="zone-card zone-card--vip" href="#prices-vip">
+            <strong>VIP</strong>
+            <span>от 140 ₽ / час</span>
+          </a>
+          <a class="zone-card zone-card--simracing" href="#prices-simracing">
+            <strong>SIMRACING</strong>
+            <span>от 500 ₽ / час</span>
+          </a>
+          <a class="zone-card zone-card--tv-zone" href="#prices-tv-zone">
+            <strong>TV ZONE</strong>
+            <span>от 300 ₽ / час</span>
+          </a>
+        </div>
+      </section>
+      <section class="section price-section" id="prices">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow dark">ВСЕ ЗОНЫ / ТАРИФЫ</div>
+            <h2>
+              ПАКЕТЫ<br /><em>И ЦЕНЫ<span>.</span></em>
+            </h2>
+          </div>
+        </div>
+        <div class="all-prices">
+          <div class="price-card" id="prices-standard">
+            <div class="price-title">
+              <span>ТАРИФЫ / STANDARD</span><a href="#zones">К зонам</a>
+            </div>
+            <div class="price-table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ПАКЕТ</th>
+                    <th>БУДНИ</th>
+                    <th>ВЫХОДНЫЕ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1 час</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=standard&amp;offer=1h&amp;day=weekday#booking"
+                        aria-label="Standard: 1 час, будни, 120 ₽; перейти к бронированию"
+                        >120 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=standard&amp;offer=1h&amp;day=weekend#booking"
+                        aria-label="Standard: 1 час, выходные, 140 ₽; перейти к бронированию"
+                        >140 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет 3 часа</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=standard&amp;offer=3h&amp;day=weekday#booking"
+                        aria-label="Standard: Пакет 3 часа, будни, 320 ₽; перейти к бронированию"
+                        >320 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=standard&amp;offer=3h&amp;day=weekend#booking"
+                        aria-label="Standard: Пакет 3 часа, выходные, 370 ₽; перейти к бронированию"
+                        >370 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет 5 часов</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=standard&amp;offer=5h&amp;day=weekday#booking"
+                        aria-label="Standard: Пакет 5 часов, будни, 480 ₽; перейти к бронированию"
+                        >480 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=standard&amp;offer=5h&amp;day=weekend#booking"
+                        aria-label="Standard: Пакет 5 часов, выходные, 530 ₽; перейти к бронированию"
+                        >530 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет «Утро» · 08:00–12:00</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=standard&amp;offer=morning&amp;day=weekday#booking"
+                        aria-label="Standard: Пакет «Утро» · 08:00–12:00, будни, 260 ₽; перейти к бронированию"
+                        >260 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=standard&amp;offer=morning&amp;day=weekend#booking"
+                        aria-label="Standard: Пакет «Утро» · 08:00–12:00, выходные, 300 ₽; перейти к бронированию"
+                        >300 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет «День» · 12:00–22:00</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=standard&amp;offer=day&amp;day=weekday#booking"
+                        aria-label="Standard: Пакет «День» · 12:00–22:00, будни, 850 ₽; перейти к бронированию"
+                        >850 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=standard&amp;offer=day&amp;day=weekend#booking"
+                        aria-label="Standard: Пакет «День» · 12:00–22:00, выходные, 950 ₽; перейти к бронированию"
+                        >950 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет «Ночь» · 22:00–08:00</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=standard&amp;offer=night&amp;day=weekday#booking"
+                        aria-label="Standard: Пакет «Ночь» · 22:00–08:00, будни, 600 ₽; перейти к бронированию"
+                        >600 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=standard&amp;offer=night&amp;day=weekend#booking"
+                        aria-label="Standard: Пакет «Ночь» · 22:00–08:00, выходные, 650 ₽; перейти к бронированию"
+                        >650 ₽</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="price-card" id="prices-ostrovok">
+            <div class="price-title">
+              <span>ТАРИФЫ / ОСТРОВОК</span><a href="#zones">К зонам</a>
+            </div>
+            <div class="price-table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ПАКЕТ</th>
+                    <th>БУДНИ</th>
+                    <th>ВЫХОДНЫЕ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1 час</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=ostrovok&amp;offer=1h&amp;day=weekday#booking"
+                        aria-label="Островок: 1 час, будни, 110 ₽; перейти к бронированию"
+                        >110 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=ostrovok&amp;offer=1h&amp;day=weekend#booking"
+                        aria-label="Островок: 1 час, выходные, 130 ₽; перейти к бронированию"
+                        >130 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет 3 часа</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=ostrovok&amp;offer=3h&amp;day=weekday#booking"
+                        aria-label="Островок: Пакет 3 часа, будни, 300 ₽; перейти к бронированию"
+                        >300 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=ostrovok&amp;offer=3h&amp;day=weekend#booking"
+                        aria-label="Островок: Пакет 3 часа, выходные, 350 ₽; перейти к бронированию"
+                        >350 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет 5 часов</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=ostrovok&amp;offer=5h&amp;day=weekday#booking"
+                        aria-label="Островок: Пакет 5 часов, будни, 450 ₽; перейти к бронированию"
+                        >450 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=ostrovok&amp;offer=5h&amp;day=weekend#booking"
+                        aria-label="Островок: Пакет 5 часов, выходные, 500 ₽; перейти к бронированию"
+                        >500 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет «Утро» · 08:00–12:00</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=ostrovok&amp;offer=morning&amp;day=weekday#booking"
+                        aria-label="Островок: Пакет «Утро» · 08:00–12:00, будни, 240 ₽; перейти к бронированию"
+                        >240 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=ostrovok&amp;offer=morning&amp;day=weekend#booking"
+                        aria-label="Островок: Пакет «Утро» · 08:00–12:00, выходные, 280 ₽; перейти к бронированию"
+                        >280 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет «День» · 12:00–22:00</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=ostrovok&amp;offer=day&amp;day=weekday#booking"
+                        aria-label="Островок: Пакет «День» · 12:00–22:00, будни, 750 ₽; перейти к бронированию"
+                        >750 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=ostrovok&amp;offer=day&amp;day=weekend#booking"
+                        aria-label="Островок: Пакет «День» · 12:00–22:00, выходные, 850 ₽; перейти к бронированию"
+                        >850 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет «Ночь» · 22:00–08:00</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=ostrovok&amp;offer=night&amp;day=weekday#booking"
+                        aria-label="Островок: Пакет «Ночь» · 22:00–08:00, будни, 550 ₽; перейти к бронированию"
+                        >550 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=ostrovok&amp;offer=night&amp;day=weekend#booking"
+                        aria-label="Островок: Пакет «Ночь» · 22:00–08:00, выходные, 600 ₽; перейти к бронированию"
+                        >600 ₽</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="price-card" id="prices-vip">
+            <div class="price-title">
+              <span>ТАРИФЫ / VIP ZONE</span><a href="#zones">К зонам</a>
+            </div>
+            <div class="price-table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ПАКЕТ</th>
+                    <th>БУДНИ</th>
+                    <th>ВЫХОДНЫЕ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1 час</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=vip&amp;offer=1h&amp;day=weekday#booking"
+                        aria-label="VIP: 1 час, будни, 140 ₽; перейти к бронированию"
+                        >140 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=vip&amp;offer=1h&amp;day=weekend#booking"
+                        aria-label="VIP: 1 час, выходные, 160 ₽; перейти к бронированию"
+                        >160 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет 3 часа</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=vip&amp;offer=3h&amp;day=weekday#booking"
+                        aria-label="VIP: Пакет 3 часа, будни, 350 ₽; перейти к бронированию"
+                        >350 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=vip&amp;offer=3h&amp;day=weekend#booking"
+                        aria-label="VIP: Пакет 3 часа, выходные, 400 ₽; перейти к бронированию"
+                        >400 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет 5 часов</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=vip&amp;offer=5h&amp;day=weekday#booking"
+                        aria-label="VIP: Пакет 5 часов, будни, 580 ₽; перейти к бронированию"
+                        >580 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=vip&amp;offer=5h&amp;day=weekend#booking"
+                        aria-label="VIP: Пакет 5 часов, выходные, 680 ₽; перейти к бронированию"
+                        >680 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет «Утро» · 08:00–12:00</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=vip&amp;offer=morning&amp;day=weekday#booking"
+                        aria-label="VIP: Пакет «Утро» · 08:00–12:00, будни, 300 ₽; перейти к бронированию"
+                        >300 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=vip&amp;offer=morning&amp;day=weekend#booking"
+                        aria-label="VIP: Пакет «Утро» · 08:00–12:00, выходные, 340 ₽; перейти к бронированию"
+                        >340 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет «День» · 12:00–22:00</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=vip&amp;offer=day&amp;day=weekday#booking"
+                        aria-label="VIP: Пакет «День» · 12:00–22:00, будни, 1050 ₽; перейти к бронированию"
+                        >1050 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=vip&amp;offer=day&amp;day=weekend#booking"
+                        aria-label="VIP: Пакет «День» · 12:00–22:00, выходные, 1150 ₽; перейти к бронированию"
+                        >1150 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет «Ночь» · 22:00–08:00</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=vip&amp;offer=night&amp;day=weekday#booking"
+                        aria-label="VIP: Пакет «Ночь» · 22:00–08:00, будни, 700 ₽; перейти к бронированию"
+                        >700 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=vip&amp;offer=night&amp;day=weekend#booking"
+                        aria-label="VIP: Пакет «Ночь» · 22:00–08:00, выходные, 750 ₽; перейти к бронированию"
+                        >750 ₽</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="price-card" id="prices-simracing">
+            <div class="price-title">
+              <span>ТАРИФЫ / SIMRACING</span><a href="#zones">К зонам</a>
+            </div>
+            <div class="price-table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ПАКЕТ</th>
+                    <th>БУДНИ</th>
+                    <th>ВЫХОДНЫЕ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1 час</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=simracing&amp;offer=1h&amp;day=weekday#booking"
+                        aria-label="Simracing: 1 час, будни, 500 ₽; перейти к бронированию"
+                        >500 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=simracing&amp;offer=1h&amp;day=weekend#booking"
+                        aria-label="Simracing: 1 час, выходные, 600 ₽; перейти к бронированию"
+                        >600 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет 2 часа</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=simracing&amp;offer=2h&amp;day=weekday#booking"
+                        aria-label="Simracing: Пакет 2 часа, будни, 900 ₽; перейти к бронированию"
+                        >900 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=simracing&amp;offer=2h&amp;day=weekend#booking"
+                        aria-label="Simracing: Пакет 2 часа, выходные, 1100 ₽; перейти к бронированию"
+                        >1100 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет 3 часа</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=simracing&amp;offer=3h&amp;day=weekday#booking"
+                        aria-label="Simracing: Пакет 3 часа, будни, 1300 ₽; перейти к бронированию"
+                        >1300 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=simracing&amp;offer=3h&amp;day=weekend#booking"
+                        aria-label="Simracing: Пакет 3 часа, выходные, 1600 ₽; перейти к бронированию"
+                        >1600 ₽</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="price-card" id="prices-tv-zone">
+            <div class="price-title">
+              <span>ТАРИФЫ / TV ZONE</span><a href="#zones">К зонам</a>
+            </div>
+            <div class="price-table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ПАКЕТ</th>
+                    <th>БУДНИ</th>
+                    <th>ВЫХОДНЫЕ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1 час</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=tv-zone&amp;offer=1h&amp;day=weekday#booking"
+                        aria-label="TV Zone: 1 час, будни, 300 ₽; перейти к бронированию"
+                        >300 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=tv-zone&amp;offer=1h&amp;day=weekend#booking"
+                        aria-label="TV Zone: 1 час, выходные, 350 ₽; перейти к бронированию"
+                        >350 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет 3 часа</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=tv-zone&amp;offer=3h&amp;day=weekday#booking"
+                        aria-label="TV Zone: Пакет 3 часа, будни, 700 ₽; перейти к бронированию"
+                        >700 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=tv-zone&amp;offer=3h&amp;day=weekend#booking"
+                        aria-label="TV Zone: Пакет 3 часа, выходные, 850 ₽; перейти к бронированию"
+                        >850 ₽</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Пакет 5 часов</th>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=tv-zone&amp;offer=5h&amp;day=weekday#booking"
+                        aria-label="TV Zone: Пакет 5 часов, будни, 1000 ₽; перейти к бронированию"
+                        >1000 ₽</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        class="price-choice"
+                        href="/prime-demo/?zone=tv-zone&amp;offer=5h&amp;day=weekend#booking"
+                        aria-label="TV Zone: Пакет 5 часов, выходные, 1200 ₽; перейти к бронированию"
+                        >1200 ₽</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="booking" class="single-booking">
+        <div class="single-booking-intro">
+          <h2>ВЫБЕРИ <em>СВОЁ МЕСТО.</em></h2>
+        </div>
+
+        <section class="tool-layout">
+          <div class="tool-main">
+            <div class="tool-card">
+              <h2>Параметры игры</h2>
+              <div class="booking-fields booking-parameters">
+                <div class="booking-field" data-custom-field="zone">
+                  <label for="booking-zone" id="booking-zone-label"
+                    >Игровая зона</label
+                  >
+                  <select id="booking-zone">
+                    <option value="standard">Standard</option>
+                    <option value="ostrovok">Островок</option>
+                    <option value="vip">VIP</option>
+                    <option value="simracing">Simracing</option>
+                    <option value="tv-zone">TV Zone</option>
+                  </select>
+                </div>
+                <div class="booking-field" data-custom-field="date">
+                  <label for="booking-date" id="booking-date-label">Дата</label>
+                  <input id="booking-date" type="date" />
+                </div>
+                <div class="booking-field" data-custom-field="time">
+                  <label for="booking-time" id="booking-time-label"
+                    >Начало</label
+                  >
+                  <input id="booking-time" type="time" value="18:00" />
+                </div>
+                <div class="booking-field" data-custom-field="duration">
+                  <label for="booking-duration" id="booking-duration-label"
+                    >Время игры</label
+                  >
+                  <select id="booking-duration">
+                    <option value="" disabled>Выберите время игры</option>
+                    <option value="1" selected>1 час</option>
+                    <option value="2">2 часа</option>
+                    <option value="3">3 часа</option>
+                    <option value="5">5 часов</option>
+                  </select>
+                </div>
+              </div>
+              <div class="booking-zone-info" aria-live="polite">
+                <strong id="zone-description-title">Что входит в зону</strong>
+                <div class="booking-zone-specs">
+                  <div>
+                    <h3 id="zone-pc-heading">Характеристики ПК</h3>
+                    <p id="zone-pc-specs"></p>
+                  </div>
+                  <div>
+                    <h3>Гарнитура и устройства</h3>
+                    <p id="zone-peripherals"></p>
+                  </div>
+                </div>
+                <p class="booking-zone-price" id="zone-hourly-price"></p>
+              </div>
+            </div>
+            <div class="tool-card seat-choice">
+              <div class="tool-step">02 / ВЫБОР МЕСТА</div>
+              <h2>Выберите место</h2>
+              <div class="booking-fields">
+                <label
+                  >Свободный ПК
+                  <select id="booking-seat" disabled>
+                    <option value="">Выберите дату и время</option>
+                  </select>
+                </label>
+              </div>
+              <p class="helper" id="map-note" role="status"></p>
+            </div>
+          </div>
+          <aside class="tool-side">
+            <div class="tool-card summary">
+              <div class="tool-step">ВАШ ВЫБОР</div>
+              <h2>Детали</h2>
+              <dl>
+                <div>
+                  <dt>Зона</dt>
+                  <dd id="summary-zone">Standard</dd>
+                </div>
+                <div>
+                  <dt>Тариф</dt>
+                  <dd id="summary-offer">1 час · стоимость уточняется</dd>
+                </div>
+                <div>
+                  <dt>Дата</dt>
+                  <dd id="summary-date">—</dd>
+                </div>
+                <div>
+                  <dt>Начало</dt>
+                  <dd id="summary-time">18:00</dd>
+                </div>
+                <div>
+                  <dt>Длительность</dt>
+                  <dd id="summary-duration">1 час</dd>
+                </div>
+                <div>
+                  <dt>Место</dt>
+                  <dd id="summary-seat">Не выбрано</dd>
+                </div>
+              </dl>
+              <div class="auth-box" id="account" tabindex="-1">
+                <div class="tool-step">ДЕМОНСТРАЦИЯ</div>
+                <p class="helper">Это демонстрационная версия. Вход, отправка SMS, оплата и настоящее бронирование пока недоступны.</p>
+              </div>
+              <button class="button" id="confirm-booking" type="button">Попробовать бронирование</button>
+              <p class="helper" id="booking-message" aria-live="polite"></p>
+            </div>
+          </aside>
+        </section>
+        <section class="section my-bookings" id="my-bookings" hidden>
+          <div class="tool-step">ЛИЧНЫЙ КАБИНЕТ</div>
+          <h2>МОИ БРОНИ.</h2>
+          <p class="helper" id="my-bookings-note">
+            Войдите по номеру телефона, чтобы увидеть свои брони.
+          </p>
+          <div id="my-bookings-list"></div>
+        </section>
+      </div>
+      <section class="rules-page" id="rules">
+        <div class="rules-inner">
+          <div class="rules-intro">
+            <h2>ПРАВИЛА <span>КЛУБА.</span></h2>
+          </div>
+          <details class="rules-disclosure">
+            <summary>Показать правила клуба</summary>
+            <nav class="rules-nav" aria-label="Разделы правил">
+              <a href="#club-rights">Права клуба</a>
+              <a href="#prohibited">Запрещается</a>
+              <a href="#visitor-rights">Права посетителей</a>
+            </nav>
+            <section class="rules-section" id="club-rights">
+              <div class="rules-section-number">01 / 03</div>
+              <h2>Игровая зона «Прайм» вправе</h2>
+              <ol class="rules-list">
+                <li>Самостоятельно устанавливать цены.</li>
+                <li>
+                  За нарушения правил клуба администрация вправе штрафовать
+                  посетителей снятием оплаченного времени и заблокировать доступ
+                  на территорию клуба как временно, так и на постоянной основе.
+                </li>
+                <li>
+                  Не допускать в игровую зону лиц, не достигших 7 лет, без
+                  сопровождения взрослых.
+                </li>
+                <li>
+                  Не возвращать оплаченное время, если гость отказался
+                  пользоваться часами не по нашей вине.
+                </li>
+                <li>
+                  Не допускать в игровую зону в ночное время (с 22:00 до 6:00) и
+                  не бронировать время лицам моложе 18 лет.
+                </li>
+                <li>
+                  Потребовать у посетителя документ, удостоверяющий личность (в
+                  том числе документ, удостоверяющий личность иностранного
+                  посетителя или лица без гражданства в Российской Федерации) и
+                  позволяющий установить возраст этого посетителя.
+                </li>
+                <li>
+                  Не предоставлять услуги лицам в состоянии алкогольного,
+                  наркотического или токсического опьянения.
+                </li>
+              </ol>
+            </section>
+            <section class="rules-section" id="prohibited">
+              <div class="rules-section-number">02 / 03</div>
+              <h2>Посетителям запрещается</h2>
+              <ol class="rules-list" start="8">
+                <li>
+                  Порча имущества компьютерного клуба. В случае порчи имущества
+                  посетитель обязуется компенсировать компьютерному клубу
+                  денежный эквивалент нанесённого вреда. В противном случае
+                  посетитель будет привлечён к административной ответственности.
+                </li>
+                <li>
+                  Использовать программное обеспечение, не установленное на
+                  компьютере, запускать программы с носителей, вредоносно
+                  влияющие на работу системы. Запрещается самостоятельное
+                  проникновение в систему, изменение настроек, удаление или
+                  изменение данных.
+                </li>
+                <li>
+                  Самостоятельно передвигать мониторы, системные блоки и другие
+                  составные части компьютера, разъединять составные части
+                  компьютера и прикасаться к элементам электросети, питающим
+                  компьютеры и сетевые устройства.
+                </li>
+                <li>Спать в игровой зоне.</li>
+                <li>
+                  Оставлять арендуемое место после сеанса в ненадлежащем виде,
+                  грязным.
+                </li>
+                <li>
+                  Превышать лимит пользователей для арендуемой техники: ТВ — 2
+                  человека, ПК — 1 человек.
+                </li>
+                <li>
+                  Находиться в игровой зоне без оплаченного и предоставленного
+                  арендного места.
+                </li>
+                <li>Вешать верхнюю одежду на спинку кресел.</li>
+                <li>
+                  Злоупотреблять нецензурной лексикой, оскорблять других
+                  посетителей и персонал игровой зоны «Прайм».
+                </li>
+                <li>
+                  Употреблять табачные и запрещённые изделия на территории
+                  (vape, электронные сигареты, сигареты, снюс, насвай, наркотики
+                  и т. п.).
+                </li>
+                <li>
+                  Пользоваться симуляторами интернет-казино, посещать сайты,
+                  тематика которых запрещена на территории РФ.
+                </li>
+                <li>Проникать в служебные, производственные помещения.</li>
+                <li>
+                  Пользоваться открытым огнём, пиротехническими устройствами
+                  (фейерверками, петардами и т. п.).
+                </li>
+                <li>Проносить с собой и употреблять спиртные напитки.</li>
+              </ol>
+            </section>
+            <section class="rules-section" id="visitor-rights">
+              <div class="rules-section-number">03 / 03</div>
+              <h2>Посетители имеют право</h2>
+              <ol class="rules-list" start="22">
+                <li>
+                  Получить доступ к компьютерам и другим услугам только после их
+                  оплаты.
+                </li>
+                <li>
+                  После оплаты посетителю предоставляется рабочий компьютер и
+                  поддержка в его настройке.
+                </li>
+                <li>
+                  В присутствии сотрудника игровой зоны подключать своё
+                  оборудование (наушники, мышки, клавиатуры).
+                </li>
+                <li>
+                  Проносить с собой еду и напитки, предварительно оплатив
+                  «пробковый сбор» 50 рублей за единицу продукта.
+                </li>
+                <li>
+                  Получать компенсацию за утраченное время в случае форс-мажора.
+                </li>
+              </ol>
+            </section>
+            <p class="rules-agreement">
+              Покупая любой товар или услугу в компьютерном клубе, клиент
+              автоматически соглашается с данными правилами.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a
+        class="logo brand-logo"
+        href="/prime-demo/"
+        aria-label="Прайм — игровая зона"
+        ><img src="/prime-demo/assets/images/prime-logo.svg" alt="Прайм — игровая зона"
+      /></a>
+      <div class="home-footer-links">
+        <a
+          href="https://vk.ru/primegamezone"
+          target="_blank"
+          rel="noopener noreferrer"
+          >ВКонтакте</a
+        >
+        <a
+          href="https://yandex.ru/maps/10995/krasnodar-krai/house/ulitsa_gorkogo_57/Z0EYfwBiSUIOQFpsfXx5dX5iZQ==/?ll=38.974227%2C46.084189&amp;z=15.55"
+          target="_blank"
+          rel="noopener noreferrer"
+          >ст. Каневская · ул. Горького, 57</a
+        >
+      </div>
+      <span>© PRIME</span>
+    </footer>
+    <dialog id="modal">
+      <button class="close" aria-label="Закрыть">×</button>
+      <div id="modalContent"></div>
+    </dialog>
+    <script type="module" src="/prime-demo/assets/js/app.js"></script>
+    <script type="module" src="/prime-demo/assets/js/motion.js"></script>
+    <script src="/prime-demo/demo-booking.js" defer></script>
+    <script src="/prime-demo/pages/booking/custom-controls.js" defer></script>
+  </body>
+</html>

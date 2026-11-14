@@ -1,0 +1,51 @@
+.zone-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(90deg, #160d21ed 0%, #160d21a8 42%, #160d2133 100%),
+    var(--zone-image);
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transform: translateX(5%) scale(1.06);
+  transition:
+    opacity 0.8s ease,
+    transform 1s cubic-bezier(0.2, 0.7, 0.2, 1);
+  pointer-events: none;
+}
+
+.zone-card:focus-visible::before {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+@media (hover: hover) {
+  .zone-card:hover::before {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.zone-card--standard {
+  --zone-image: url("/prime-demo/assets/images/zones/standard.png");
+}
+.zone-card--ostrovok {
+  --zone-image: url("/prime-demo/assets/images/zones/ostrovok.png");
+}
+.zone-card--vip {
+  --zone-image: url("/prime-demo/assets/images/zones/vip.png");
+}
+.zone-card--simracing {
+  --zone-image: url("/prime-demo/assets/images/zones/simracing.png");
+}
+.zone-card--tv-zone {
+  --zone-image: url("/prime-demo/assets/images/zones/tv-zone.png");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zone-card::before {
+    transition: none;
+  }
+}

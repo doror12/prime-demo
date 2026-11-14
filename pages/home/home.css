@@ -1,0 +1,170 @@
+header.home-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
+.home-header > .brand-logo {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+}
+
+.header-rules {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+  padding: 10px 14px;
+  border: 1px solid #79618d;
+  color: #f3e9ff;
+  font-size: 12px;
+  font-weight: 800;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.header-rules:hover {
+  border-color: #c39aff;
+  background: #38234b;
+}
+
+.home-header-right {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  min-width: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.header-location {
+  color: #cbb5e1;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: right;
+  transition: color 0.2s;
+}
+
+.header-location:hover {
+  color: #fff;
+}
+
+.hero .hero-booking {
+  width: min(260px, 84vw);
+  min-height: 68px;
+  border-radius: 18px;
+  font-size: 15px;
+}
+
+/* The real club photo stays behind the logo and booking button. */
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero::before {
+  background: url("/prime-demo/assets/images/prime-club-photo.png") center 48% / cover
+    no-repeat;
+  opacity: 0.38;
+  filter: grayscale(45%) saturate(75%);
+}
+
+.hero::after {
+  background:
+    radial-gradient(
+      ellipse at center,
+      #130c20b5 0%,
+      #130c2066 48%,
+      #100a19a8 100%
+    ),
+    linear-gradient(0deg, #0f0b16d9, transparent 40%, #110a1a80);
+}
+
+.hero-decor {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-decor-side {
+  flex: 0 0 clamp(100px, 16vw, 240px);
+  width: clamp(100px, 16vw, 240px);
+  stroke: #b779ff;
+  stroke-width: 7;
+  opacity: 0.55;
+  filter: drop-shadow(0 0 12px #9d51ed80);
+  animation: hero-glow 6s ease-in-out infinite alternate;
+}
+
+.hero-decor-side--right {
+  transform: scaleX(-1);
+}
+
+@keyframes hero-glow {
+  from {
+    opacity: 0.35;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-decor-side {
+    animation: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-header-right {
+    gap: 5px;
+  }
+
+  .header-location {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 600px) {
+  header.home-header {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .home-header > .brand-logo,
+  .home-header-right {
+    grid-column: 1;
+  }
+
+  .home-header-right {
+    grid-row: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 16px;
+  }
+}
