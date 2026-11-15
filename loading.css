@@ -21,7 +21,8 @@ html.prime-opening {
   position: relative;
   width: min(70vw, 460px);
   aspect-ratio: 1200 / 310;
-  filter: drop-shadow(0 0 24px #962ee175);
+  transform-style: preserve-3d;
+  animation: prime-logo-spin 2s cubic-bezier(.45, 0, .25, 1) forwards;
 }
 
 .prime-loader__image {
@@ -30,7 +31,15 @@ html.prime-opening {
   display: block;
   width: 100%;
   height: 100%;
-  animation: prime-logo-spin 2s cubic-bezier(.45, 0, .25, 1) forwards;
+}
+
+.prime-loader__depth {
+  transform: translateZ(calc(var(--depth) * -2px));
+  filter: brightness(.43) saturate(1.3);
+}
+
+.prime-loader__front {
+  filter: drop-shadow(0 0 12px #962ee175);
 }
 
 @keyframes prime-logo-spin {
