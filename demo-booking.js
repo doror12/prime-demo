@@ -80,9 +80,10 @@
       seats.add(new Option(`ПК ${String(number).padStart(2, '0')}`, String(number)));
     }
     seats.disabled = !info.count;
+    note.hidden = !info.count;
     note.textContent = info.count
       ? 'Номера показаны для примера. Реальная занятость не отображается.'
-      : 'Выбор места станет доступен после уточнения количества мест.';
+      : '';
     render();
   }
 
