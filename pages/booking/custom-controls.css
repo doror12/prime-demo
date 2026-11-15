@@ -69,6 +69,12 @@
   padding: 16px;
 }
 
+.custom-field-panel--duration {
+  max-height: min(320px, 45vh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
 .booking-field:nth-child(even) .custom-field-panel--date,
 .booking-field:nth-child(even) .custom-field-panel--time {
   right: 0;
