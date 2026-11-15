@@ -1,0 +1,64 @@
+.prime-loader {
+  display: none;
+}
+
+html.prime-opening {
+  scroll-behavior: auto !important;
+}
+
+.prime-opening .prime-loader {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(ellipse at center, #27133b 0%, #0d0812 70%);
+  animation: prime-loader-exit 2.4s ease-in-out forwards;
+  pointer-events: none;
+}
+
+.prime-loader__logo {
+  position: relative;
+  width: min(70vw, 460px);
+  aspect-ratio: 1200 / 310;
+  filter: drop-shadow(0 0 24px #962ee175);
+}
+
+.prime-loader__half {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.prime-loader__half--left {
+  clip-path: polygon(0 0, 53% 0, 48% 36%, 52% 46%, 47% 70%, 50% 100%, 0 100%);
+  animation: prime-crack-left 2s cubic-bezier(.45, 0, .25, 1) forwards;
+}
+
+.prime-loader__half--right {
+  clip-path: polygon(53% 0, 100% 0, 100% 100%, 50% 100%, 47% 70%, 52% 46%, 48% 36%);
+  animation: prime-crack-right 2s cubic-bezier(.45, 0, .25, 1) forwards;
+}
+
+@keyframes prime-crack-left {
+  0%, 12% { transform: translate(0, 0) rotate(0); }
+  42% { transform: translate(-18px, -3px) rotate(-2deg); }
+  78%, 100% { transform: translate(0, 0) rotate(0); }
+}
+
+@keyframes prime-crack-right {
+  0%, 12% { transform: translate(0, 0) rotate(0); }
+  42% { transform: translate(18px, 3px) rotate(2deg); }
+  78%, 100% { transform: translate(0, 0) rotate(0); }
+}
+
+@keyframes prime-loader-exit {
+  0%, 75% { opacity: 1; visibility: visible; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prime-opening .prime-loader { display: none; }
+}
